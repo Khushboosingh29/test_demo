@@ -1,0 +1,13 @@
+POST http://localhost:5000/userIssue/createUserIssue
+Content-Type: application/json
+
+{
+    "firstName": "khushboo",
+    "lastName":"Singh",
+    "EmailId": "Singh@gmail.com",
+    "subjectForIssue":"ABCD",
+    "writeYourIssue":"XYZ"
+}
+###
+
+GET http://localhost:5000/userIssue/getUserIssue
