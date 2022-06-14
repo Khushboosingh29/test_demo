@@ -1,4 +1,4 @@
-
+import http from 'http';
 const express = require("express");
 //var http = require("http");
 const app = express();
@@ -14,7 +14,7 @@ db.once("open",function(){
     console.log("Connected MongoDB");
 });
 
-app.listen(port,function(){
+app.listen(process.env.PORT,function(){
     console.log("Server is running on port", port);
 });
 
