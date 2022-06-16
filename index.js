@@ -6,8 +6,8 @@ const port= process.env.PORT || 5000;
 
 const mongoose=require("mongoose");
 const router = require("./routes/issues");
-//mongoose.connect('mongodb+srv://khushboohavoc:khushboo123@cluster0.yxd9d.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true});
-mongoose.connect('mongodb+srv://Issue:9Anushka219@cluster0.yodvb.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://khushboohavoc:khushboo123@cluster0.yxd9d.mongodb.net/?retryWrites=true&w=majority', {useNewUrlParser: true});
+//mongoose.connect('mongodb+srv://Issue:9Anushka219@cluster0.yodvb.mongodb.net/?retryWrites=true&w=majority');
 const db=mongoose.connection;
 db.on("error",console.error.bind(console,"connection error: "));
 db.once("open",function(){
