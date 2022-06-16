@@ -21,7 +21,7 @@ router.post("/createUserIssue", (req,res)=>{
 
 router.get("/getUserIssue", async(req,res)=>{
     try{
-        let UserIssue=await UserIssueModel.find();
+        let userIssue=await UserIssueModel.find();
         res.json(userIssue);
     }
     catch(e){
